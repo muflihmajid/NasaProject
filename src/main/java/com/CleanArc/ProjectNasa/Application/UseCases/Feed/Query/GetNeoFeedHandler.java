@@ -38,19 +38,11 @@ public class GetNeoFeedHandler {
             List<Meteor> meteorList = new ArrayList<>();
             asteroidByDates.getMeteor().values().forEach(meteorList::addAll);
             getNeoFeedDto.data = Model.convertToMeteorModelList(meteorList);
-
-            // meteorList.sort((m1, m2) -> m1.getCloseApproachData()
-            //                  .get(0).getMissDistance().kilometers.compareTo(m2
-            //                  .getCloseApproachData().get(0).getMissDistance().kilometers));         
-            // List<MeteorModel> datamodelList = new ArrayList<>();
-            // //mapping to new model
-            // meteorList.forEach(meteor -> datamodelList.add(new MeteorModel(meteor.links.getSelf(),meteor.getId(),meteor.neoReferenceRid, meteor.getName(),
-            // meteor.getPotentiallyHazardousAsteroid(),meteor.getCloseApproachData().get(0).closeApproachDate, meteor.getCloseApproachData().get(0).closeApproachDateFull,
-            // meteor.getCloseApproachData().get(0).relativeVelocity.kilometersPerSecond,meteor.getCloseApproachData().get(0).getMissDistance().kilometers, meteor.getSentryObject())));
-            // getNeoFeedDto.datamModels = datamodelList.subList(0, 10);
-        } catch (Exception e) {
+            } 
+        catch (Exception e) 
+            {
             System.out.println(e);
-        }
+            }
         return new GetNeoFeedDto(){
             {
                 Success = true;
