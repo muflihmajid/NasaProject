@@ -31,6 +31,19 @@ public class Meteor {
     public ArrayList<CloseApproachDatum> closeApproachData;
     @SerializedName("is_sentry_object")
     public boolean isSentryObject;
+
+    public Meteor(Links links, String id, String neoReferenceId, String name,  String nasaJplUrl, Double absoluteMagnitudeH, EstimatedDiameter estimatedDiameter, Boolean isPotentiallyHazardousAsteroid, ArrayList<CloseApproachDatum> closeApproachData, Boolean isSentryObject) {
+        this.links = links;
+        this.id = id;
+        this.neoReferenceRid = neoReferenceId;
+        this.name = name;
+        this.nasaJplUrl = nasaJplUrl;
+        this.absoluteMagnitudeH = absoluteMagnitudeH;
+        this.estimatedDiameter = estimatedDiameter;
+        this.isPotentiallyHazardousAsteroid = isPotentiallyHazardousAsteroid;
+        this.closeApproachData = closeApproachData;
+        this.isSentryObject = isSentryObject;
+    }
     // Getter Methods
     public String getId() {
         return id;
@@ -58,7 +71,7 @@ public class Meteor {
     }
 
     //Functionality 10
-    //This function to get mapping of meteor based on their approach date
+    //This function to get mapping of meteor based on their orbitingbody
     public List<String> getOrbitedBodies(){
         return closeApproachData.stream()
                 .map(CloseApproachDatum::getOrbitingBody).distinct().collect(Collectors.toList());

@@ -15,7 +15,7 @@ public class CloseApproachDatum {
     @SerializedName("orbiting_body")
     public String orbitingBody;
 
-
+    //Getter
     public String getCloseApproachDate() {
         return closeApproachDate;
     }
@@ -39,5 +39,14 @@ public class CloseApproachDatum {
 
     public double getMissedDistanceInKM(){
         return Double.parseDouble(getMissDistance().getKilometers());
+    }
+    //setter
+    public void setOrbitingBody( String orbitingBody ) {
+        this.orbitingBody = orbitingBody;
+    }
+    
+    public void setCloseApproachDate (String closeApproceDate)
+    {
+        this.closeApproachDate = closeApproceDate;
     }
 }
