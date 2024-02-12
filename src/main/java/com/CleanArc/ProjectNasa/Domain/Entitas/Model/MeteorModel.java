@@ -1,4 +1,4 @@
-package com.CleanArc.ProjectNasa.Application.UseCases.Feed.Model;
+package com.CleanArc.ProjectNasa.Domain.Entitas.Model;
 
 public class MeteorModel {
     public String links;
