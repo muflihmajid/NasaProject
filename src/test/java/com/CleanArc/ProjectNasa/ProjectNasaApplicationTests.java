@@ -46,7 +46,7 @@ class ProjectNasaApplicationTests {
     }
 
 	@Test
-    public void test() {
+    public void testOrbit() {
         // Arrange
         CloseApproachDatum datum1 = new CloseApproachDatum();
         datum1.setOrbitingBody("Earth");
