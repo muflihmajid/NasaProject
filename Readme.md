@@ -25,7 +25,7 @@ This system was based on the [requirements document](https://github.com/vinimrs/
 Trying to improve code organization, the clean architecture is a good start with that rules. We can arrive in an well-defined vertial boundaries, with a rigid hierarchy between the layers, the rules of the domain code is encapsulated of the framework code, and basically the code of the inner layers. 
 
 <p align="center">
-  <img src="https://github.com/vinimrs/spring-boot-clean-architecture/assets/92659173/b2093822-8aa2-4606-af36-1d2410a9b27f" />
+  <img src="https://github.com/muflihmajid/NasaProject/blob/main/public/Untitled%20Diagram-Clean%20arch%20java.drawio.png" />
   <p align="center">
       <i>Spring boot architecture with clean arhcitecture</i>
    </p>
