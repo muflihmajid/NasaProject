@@ -10,7 +10,7 @@ away.
 
 ### Features
 
-This system was based on the [requirements document](https://github.com/vinimrs/A3/blob/main/requisitos.pdf) proposed by the professor during the course.
+This system was based on the requirements document proposed by the task.
 
 - `Feature 1` `NEO Feed top 10`:  The system allows user get top 10 nearest Asteroid.
 - `Feature 2` `Search asteroid in date and spesific distance`: The system allow user to search the asteroid in spesific distance.
